@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  dockerImage: 'netzding/dovecot'
+  dockerImage: 'netzding/postfix'
   dockerTag: 'latest'
 
 steps:

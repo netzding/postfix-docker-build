@@ -23,8 +23,9 @@ steps:
 - task: Docker@2
   displayName: Build and Push
   inputs:
+    command: buildAndPush
     repository: $(dockerImage)
-    tags: $(dockerTag)    tags: latest
+    tags: $(dockerTag)    
 
 - task: Docker@2
   displayName: Logout of DockerHub
